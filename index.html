@@ -55,9 +55,9 @@
           <div class="messages">
             <div v-for="(item, index) in contacts" class="chat-person">
               <div class="profile-img">
-                <img :src="contacts[index].avatar" alt="">
+                <img :src="item.avatar" alt="">
               </div>
-              <h3>{{contacts[index].name}}</h3>
+              <h3>{{item.name}}</h3>
             </div>
           </div>
           <!-- /sezione varie chat -->
@@ -65,7 +65,6 @@
         <div class="chat">
           <div class="chat-header">
             <div class="profile-img">
-
             </div>
             <div class="name">
               <h3>Nome</h3>
@@ -79,7 +78,7 @@
           </div>
           <div class="chat-messages">
             <div class="message-left">
-              <p class="text">Lorem</p>
+              <p class="text">Hai portato a spasso il cane?</p>
             </div>
             <div class="message-right">
               <p class="text">Lorem</p>
