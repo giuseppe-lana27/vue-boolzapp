@@ -1,0 +1,52 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* mix */
+body{
+  background: linear-gradient(to top, #dbdbd2 86%, #009688 86%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#box{
+  max-width: 1200px;
+  height: 80vh;
+  background: pink;
+  margin: 30px auto;
+  display: flex;
+}
+
+aside{
+  width: 40%;
+  height: 100%;
+  background-color: green;
+}
+.message{
+  width: 60%;
+  height: 100%;
+  background: blue;
+}
+.profile{
+  background-color: #EAEAEA;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.profile-img{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.actions{
+  align-items: center;
+}
+.actions i{
+  color: #b1b1b1;
+  font-size: 18px;
+  margin-left: 8px;
+
+}
