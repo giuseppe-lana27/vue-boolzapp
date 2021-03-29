@@ -24,7 +24,7 @@
           <!-- sezione profilo -->
           <div class="profile">
             <div class="profile-img">
-              <img :src="avatar_1" alt="">
+              <img src="img/avatar_4.jpg" alt="Immagine Profilo">
             </div>
             <h3>Giuseppe</h3>
             <div class="actions">
@@ -55,7 +55,7 @@
           <div class="messages">
             <div v-for="(item, index) in contacts" class="chat-person">
               <div class="profile-img">
-                <img :src="item.avatar" alt="">
+                <img :src="item.avatar" alt="Avatar profili">
               </div>
               <h3>{{item.name}}</h3>
             </div>
@@ -82,6 +82,15 @@
             </div>
             <div class="message-right">
               <p class="text">Lorem</p>
+            </div>
+          </div>
+          <div class="message-input">
+            <div class="emoji">
+              <i class="far fa-smile"></i>
+            </div>
+            <input type="text" placeholder="Scrivi un messaggio" class="write-msg">
+            <div class="mic">
+              <i class="fas fa-microphone"></i>
             </div>
           </div>
         </div>

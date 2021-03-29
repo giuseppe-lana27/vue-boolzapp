@@ -105,6 +105,9 @@ aside{
   padding: 15px;
 }
 /* sezione chat */
+.chat{
+  position: relative;
+}
 .chat-header{
   height: 70px;
   display: flex;
@@ -146,4 +149,30 @@ aside{
   background-color: #D5F9BA;
   align-self: flex-end;
   margin: 10px 0;
+}
+.message-input{
+  width: 100%;
+  background-color: #F3EEEA;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.emoji{
+  display: inline-block;
+  color: #6B7376;
+  margin-right: 20px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.write-msg{
+  width: 85%;
+  padding: 10px;
+  border: none;
+}
+.mic{
+  display: inline-block;
+  color: #6B7376;
+  margin-left: 20px;
+  vertical-align: middle;
+  font-size: 18px;
 }
