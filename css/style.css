@@ -26,7 +26,7 @@ aside{
 .chat{
   width: 60%;
   height: 100%;
-  background: blue;
+  background-image: url(../img/mine.jpg);
 }
 .profile{
   background-color: #EAEAEA;
@@ -93,4 +93,16 @@ aside{
 .chat-person{
   display: flex;
   padding: 15px;
+}
+/* sezione chat */
+.chat-header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #EAEAEA;
+}
+.chat-actions i{
+  color: #b1b1b1;
+  font-size: 18px;
+  margin-left: 8px;
 }
