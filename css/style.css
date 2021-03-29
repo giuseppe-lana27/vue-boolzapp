@@ -10,6 +10,7 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
 }
+/* main */
 #box{
   max-width: 1200px;
   height: 80vh;
@@ -17,7 +18,7 @@ body{
   margin: 30px auto;
   display: flex;
 }
-
+/* aside */
 aside{
   width: 40%;
   height: 100%;
@@ -42,11 +43,47 @@ aside{
   margin-right: 20px;
 }
 .actions{
-  align-items: center;
 }
 .actions i{
   color: #b1b1b1;
   font-size: 18px;
   margin-left: 8px;
+}
 
+.notifications{
+  padding: 10px;
+  background-color: #8EDAFC;
+  display: flex;
+  align-items: center;
+}
+.bell{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 20px;
+}
+.bell i{
+  font-size: 25px;
+  color: #8EDAFC;
+  line-height: 50px;
+}
+.turn-on{
+  color: #6B7376;  
+}
+.search-bar{
+  background-color: #fff;
+  padding: 8px;
+}
+.search-bar i{
+  color: #b1b1b1;
+  vertical-align: middle;
+}
+.search{
+  width: 80%;
+  border: none;
+  margin-left: 20px;
+  padding: 5px;
+  vertical-align: middle;
 }
