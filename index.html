@@ -7,10 +7,13 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <!-- /google fonts -->    
+    <!-- /google fonts -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- /font awesome -->
+    <!-- vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- /vuejs -->
     <link rel="stylesheet" href="css/style.css">
     <title>Boolzapp</title>
   </head>
@@ -20,8 +23,10 @@
         <aside>
           <!-- sezione profilo -->
           <div class="profile">
-            <div class="profile-img"></div>
-            <h3>Nome Utente</h3>
+            <div class="profile-img">
+              <img :src="avatar_1" alt="">
+            </div>
+            <h3>Giuseppe</h3>
             <div class="actions">
               <i class="fas fa-circle-notch"></i>
               <i class="fas fa-comment-alt"></i>
@@ -48,28 +53,20 @@
           <!-- /sezione ricerca -->
           <!-- sezione varie chat -->
           <div class="messages">
-            <div class="chat-person">
-              <div class="profile-img"></div>
-              <h3>Nome</h3>
-            </div>
-            <div class="chat-person">
-              <div class="profile-img"></div>
-              <h3>Nome</h3>
-            </div>
-            <div class="chat-person">
-              <div class="profile-img"></div>
-              <h3>Nome</h3>
-            </div>
-            <div class="chat-person">
-              <div class="profile-img"></div>
-              <h3>Nome</h3>
+            <div v-for="(item, index) in contacts" class="chat-person">
+              <div class="profile-img">
+                <img :src="contacts[index].avatar" alt="">
+              </div>
+              <h3>{{contacts[index].name}}</h3>
             </div>
           </div>
           <!-- /sezione varie chat -->
         </aside>
         <div class="chat">
           <div class="chat-header">
-            <div class="profile-img"></div>
+            <div class="profile-img">
+
+            </div>
             <div class="name">
               <h3>Nome</h3>
               <p>Ultimo accesso</p>
@@ -91,5 +88,6 @@
         </div>
       </div>
     </main>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
