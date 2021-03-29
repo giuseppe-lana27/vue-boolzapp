@@ -8,9 +8,13 @@
 body{
   background: linear-gradient(to top, #dbdbd2 86%, #009688 86%);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: calc(100% - 60px);
+  font-family: 'Lato', sans-serif;
 }
 /* main */
+main{
+  height: 100%
+}
 #box{
   max-width: 1200px;
   height: 80vh;
@@ -29,6 +33,7 @@ aside{
   background-image: url(../img/mine.jpg);
 }
 .profile{
+  height: 70px;
   background-color: #EAEAEA;
   padding: 10px;
   display: flex;
@@ -96,6 +101,7 @@ aside{
 }
 /* sezione chat */
 .chat-header{
+  height: 70px;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -107,9 +113,10 @@ aside{
   margin-left: 8px;
 }
 .chat-messages{
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  height: 100%;
-  background-color: green;
+  height: calc(100% - 130px);
   margin: 30px auto;
 }
 .message-left{
@@ -117,7 +124,7 @@ aside{
   height: 60px;
   background: #fff;
   border-radius: 20px;
-  float: left;
+  align-self: flex-start;
 }
 .text{
   padding: 10px;
@@ -126,7 +133,8 @@ aside{
 .message-right{
   width: 40%;
   height: 60px;
-  border-radius: 20px;  
+  border-radius: 20px;
   background-color: #D5F9BA;
-  float: right;
+  align-self: flex-end;
+  margin: 10px 0;
 }
