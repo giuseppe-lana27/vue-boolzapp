@@ -53,7 +53,7 @@
           <!-- /sezione ricerca -->
           <!-- sezione varie chat -->
           <div class="messages">
-            <div v-for="(item, index) in contacts" class="chat-person">
+            <div v-for="(item, index) in contacts" class="chat-person" @click="changeChat(index)">
               <div class="profile-img">
                 <img :src="item.avatar" alt="Avatar profili">
               </div>

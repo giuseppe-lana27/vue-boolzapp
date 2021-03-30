@@ -68,7 +68,7 @@ var app = new Vue(
           },
           {
               name: 'Luisa',
-              avatar: 'img/avatar_4.jpg',
+              avatar: 'img/avatar_io.jpg',
               visible: true,
               messages: [{
                   date: '10/01/2020 15:30:55',
@@ -85,6 +85,11 @@ var app = new Vue(
       ],
       contactIndex: 0,
     },
-    
+    methods: {
+      changeChat: function(index) {
+        this.contactIndex = index;
+      }
+    }
+
   }
 );

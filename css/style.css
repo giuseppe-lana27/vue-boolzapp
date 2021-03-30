@@ -140,6 +140,7 @@ aside{
   background: #fff;
   border-radius: 20px;
   align-self: flex-start;
+  margin: 10px 0;  
 }
 .message-right{
   min-width: 40%;
