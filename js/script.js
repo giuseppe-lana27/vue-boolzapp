@@ -92,11 +92,16 @@ var app = new Vue(
         this.contactIndex = index;
         this.activeContact = index;
       },
-      addMessage: function(){
+      addMessage: function(index){
         if(this.newMessage !== ''){
-          this.messages.status.push(this.newMessage);
+          const newMsg = {
+            message: this.newMessage,
+            date: '10/01/2020 17:50:00',
+            status: 'sent',
+          }
+          this.contacts[index].messages.push(newMsg);
           this.newMessage = '';
-        }
+        };
       },
     }
   }

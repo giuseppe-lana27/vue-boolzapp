@@ -106,6 +106,7 @@ aside{
 .chat-person{
   display: flex;
   padding: 15px;
+  cursor: pointer;
 }
 /* sezione chat */
 .chat{
