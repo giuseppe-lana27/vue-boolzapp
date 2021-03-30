@@ -65,6 +65,7 @@
         <div class="chat">
           <div class="chat-header">
             <div class="profile-img">
+              <img src="" alt="">
             </div>
             <div class="name">
               <h3>Nome</h3>
@@ -77,11 +78,9 @@
             </div>
           </div>
           <div class="chat-messages">
-            <div class="message-left">
-              <p class="text">Hai portato a spasso il cane?</p>
-            </div>
-            <div class="message-right">
-              <p class="text">Lorem</p>
+            <div v-for="(message, index) in contacts[contactIndex].messages" :class="{'message-left': message.status == 'received', 'message-right': message.status == 'sent'}">
+              <p class="text">{{message.message}}</p>
+              <p class="date"><small>{{message.date}}</small></p>
             </div>
           </div>
           <div class="message-input">
