@@ -83,8 +83,7 @@ var app = new Vue(
               ],
           },
       ],
-      contactIndex: 0,
-      activeContact: 0,
+      contactIndex: 0,      
       newMessage: '',
       replyMessage: 'Ok',
     },
@@ -92,7 +91,6 @@ var app = new Vue(
       // funzione per cambiare la chat
       changeChat: function(index){
         this.contactIndex = index;
-        this.activeContact = index;
       },
       // funzione per inviare un messaggio
       addMessage: function(index){

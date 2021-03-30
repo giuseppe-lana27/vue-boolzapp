@@ -65,10 +65,10 @@
         <div class="chat">
           <div class="chat-header">
             <div class="profile-img" @click="changeContact(index)">
-              <img :src="contacts[activeContact].avatar" alt="Chat Avatar">
+              <img :src="contacts[contactIndex].avatar" alt="Chat Avatar">
             </div>
             <div class="name">
-              <h3>{{contacts[activeContact].name}}</h3>
+              <h3>{{contacts[contactIndex].name}}</h3>
               <p>Ultimo accesso oggi</p>
             </div>
             <div class="chat-actions">
