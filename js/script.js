@@ -86,12 +86,15 @@ var app = new Vue(
       contactIndex: 0,
       activeContact: 0,
       newMessage: '',
+      replyMessage: 'Ok',
     },
     methods: {
+      // funzione per cambiare la chat
       changeChat: function(index){
         this.contactIndex = index;
         this.activeContact = index;
       },
+      // funzione per inviare un messaggio
       addMessage: function(index){
         if(this.newMessage !== ''){
           const newMsg = {
@@ -101,7 +104,16 @@ var app = new Vue(
           }
           this.contacts[index].messages.push(newMsg);
           this.newMessage = '';
+          setTimeout(this.messageReply, 1000);
         };
+      },
+      messageReply: function(index){
+        const msgReply = {
+          message: this.replyMessage,
+          date: '10/01/2020 18:20:00',
+          status: 'received',
+        }
+        this.contacts[this.contactIndex].messages.push(msgReply);
       },
     }
   }
