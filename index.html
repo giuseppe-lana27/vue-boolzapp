@@ -64,12 +64,12 @@
         </aside>
         <div class="chat">
           <div class="chat-header">
-            <div class="profile-img">
-              <img src="" alt="">
+            <div class="profile-img" @click="changeContact(index)">
+              <img :src="contacts[activeContact].avatar" alt="Chat Avatar">
             </div>
             <div class="name">
-              <h3>Nome</h3>
-              <p>Ultimo accesso</p>
+              <h3>{{contacts[activeContact].name}}</h3>
+              <p>Ultimo accesso oggi</p>
             </div>
             <div class="chat-actions">
               <i class="fas fa-search"></i>
@@ -87,7 +87,7 @@
             <div class="emoji">
               <i class="far fa-smile"></i>
             </div>
-            <input type="text" placeholder="Scrivi un messaggio" class="write-msg">
+            <input type="text" placeholder="Scrivi un messaggio" class="write-msg" @keyup.13="addMessage">
             <div class="mic">
               <i class="fas fa-microphone"></i>
             </div>

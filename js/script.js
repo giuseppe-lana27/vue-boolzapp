@@ -84,12 +84,20 @@ var app = new Vue(
           },
       ],
       contactIndex: 0,
+      activeContact: 0,
+      newMessage: '',
     },
     methods: {
-      changeChat: function(index) {
+      changeChat: function(index){
         this.contactIndex = index;
-      }
+        this.activeContact = index;
+      },
+      addMessage: function(){
+        if(this.newMessage !== ''){
+          this.messages.status.push(this.newMessage);
+          this.newMessage = '';
+        }
+      },
     }
-
   }
 );
