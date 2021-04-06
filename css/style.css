@@ -193,3 +193,6 @@ aside{
   vertical-align: middle;
   font-size: 18px;
 }
+.hide{
+  display: none;
+}

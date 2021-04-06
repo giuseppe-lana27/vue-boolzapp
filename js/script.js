@@ -86,7 +86,7 @@ var app = new Vue(
       contactIndex: 0,
       newMessage: '',
       replyMessage: 'Ok',
-      search: '',
+      searchName: '',
     },
     methods: {
       // funzione per cambiare la chat
@@ -115,8 +115,8 @@ var app = new Vue(
         this.contacts[this.contactIndex].messages.push(msgReply);
       },
       findContact: function(){
-        for ( var i = 0; i < this.contacts.length; i++){
-          if(this.contacts[i].name.toLowerCase().includes(this.search.toLowerCase())) {
+        for (var i = 0; i < this.contacts.length; i++){
+          if(this.contacts[i].name.toLowerCase().includes(this.searchName.toLowerCase())){
             this.contacts[i].visible = true;
           } else {
             this.contacts[i].visible = false;

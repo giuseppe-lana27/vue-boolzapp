@@ -48,12 +48,12 @@
           <!-- sezione ricerca -->
           <div class="search-bar">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder="Cerca o inizia una nuova chat" class="search" v-model="search" @kedown="findContact">
+            <input type="text" placeholder="Cerca o inizia una nuova chat" class="search" v-model="searchName" @keyup="findContact">
           </div>
           <!-- /sezione ricerca -->
           <!-- sezione varie chat -->
           <div class="messages">
-            <div v-for="(item, index) in contacts" class="chat-person" @click="changeChat(index)">
+            <div v-for="(item, index) in contacts" class="chat-person" :class="{'hide': item.visible == false}" @click="changeChat(index)">
               <div class="profile-img">
                 <img :src="item.avatar" alt="Avatar profili">
               </div>
