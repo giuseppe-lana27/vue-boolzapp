@@ -94,10 +94,10 @@ aside{
   padding: 5px;
 }
 .search{
-  width: 80%;
+  width: 85%;
   border: none;
   margin-left: 20px;
-  padding: 5px;
+  padding: 10px;
   vertical-align: middle;
 }
 .messages{
@@ -137,6 +137,7 @@ aside{
   width: 80%;
   height: calc(100% - 130px);
   margin: 30px auto;
+  overflow: auto;
 }
 .message-left{
   min-width: 40%;

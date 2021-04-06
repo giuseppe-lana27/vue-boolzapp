@@ -48,7 +48,7 @@
           <!-- sezione ricerca -->
           <div class="search-bar">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder="Cerca o inizia una nuova chat" class="search">
+            <input type="text" placeholder="Cerca o inizia una nuova chat" class="search" v-model="search" @kedown="findContact">
           </div>
           <!-- /sezione ricerca -->
           <!-- sezione varie chat -->
